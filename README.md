@@ -1,5 +1,6 @@
 # MostImportantVarEvaluation
 
+This probe analyzes datasets to identify the most important and potentially sensitive variables using mutual information and feature importance techniques. It helps ensure fairness in machine learning models by detecting attributes that could introduce bias or disproportionately affect model outcomes.
 
 ## Overview
 
