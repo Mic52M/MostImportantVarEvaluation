@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "config": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "L'indirizzo del server GitHub o GitLab."
+        },
+        "repo_type": {
+          "type": "string",
+          "description": "Il tipo di repository ('github' o 'gitlab').",
+          "enum": ["github", "gitlab"]
+        },
+        "project": {
+          "type": "string",
+          "description": "Il nome del progetto/repository."
+        },
+        "branch": {
+          "type": "string",
+          "description": "Il nome del branch.",
+          "default": "master"
+        },
+        "artifact_path": {
+          "type": "string",
+          "description": "Il percorso dell'artifact del modello ONNX."
+        },
+        "job_name": {
+          "type": "string",
+          "description": "Il nome del job di GitLab (necessario solo per GitLab).",
+          "default": null
+        },
+        "artifact_name": {
+          "type": "string",
+          "description": "Il nome dell'artifact di GitHub (necessario solo per GitHub).",
+          "default": null
+        }
+      },
+      "required": [
+        "target",
+        "repo_type",
+        "project",
+        "artifact_path"
+      ]
+    }
+  },
+  "required": ["config"]
+}

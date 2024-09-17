@@ -1,0 +1,9 @@
+{
+  "config": {
+    "target": "https://repository.v2.moon-cloud.eu/",
+    "repo_type":"gitlab",
+    "project":"nbena/sample-ml-apps",
+    "job_name": "split_dataset",
+    "artifact_path": "sample-ml/data/train.csv"
+	}
+}
